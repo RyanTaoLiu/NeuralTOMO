@@ -1,4 +1,3 @@
-![](https://ryantaoliu.github.io/NeuralTOMO/images/manchester.png) ![](https://ryantaoliu.github.io/NeuralTOMO/images/DML_logo.png)
 
 SIGGRAPH 2025   
 (ACM Transaction on Graphics)
@@ -21,3 +20,4 @@ An overview of our slicing framework for co-optimization of the design and manuf
 ![](https://ryantaoliu.github.io/NeuralTOMO/images/3.jpg)
 
 The ​sequential results of different volume fraction by our framework.
+![](https://ryantaoliu.github.io/NeuralTOMO/images/manchester.png) ![](https://ryantaoliu.github.io/NeuralTOMO/images/DML_logo.png)
