@@ -15,4 +15,5 @@ An overview of our slicing framework for co-optimization of the design and manuf
 ![](https://ryantaoliu.github.io/NeuralTOMO/images/3.jpg)
 
 The ​sequential results of different volume fraction by our framework.
-|<img src="https://ryantaoliu.github.io/NeuralTOMO/images/manchester.png" alt="" width="200"/> | <img src="https://ryantaoliu.github.io/NeuralTOMO/images/DML_logo.png" alt="" width="200"/>|
+
+<img src="https://ryantaoliu.github.io/NeuralTOMO/images/manchester.png" alt="" width="200"/>  <img src="https://ryantaoliu.github.io/NeuralTOMO/images/DML_logo.png" alt="" width="200"/>
