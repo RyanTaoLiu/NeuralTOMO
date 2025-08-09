@@ -1,14 +1,8 @@
 # Neural Co-Optimization of Structural Topology, Manufacturable Layers, and Path Orientations for Fiber​-Reinforced Composites
 [Tao Liu\*](#), [Tianyu Zhang\*](https://zhangty019.github.io/), Yongxue Chen, Weiming Wang,  Yu Jiang, Yuming Huang, and [Charlie C.L. Wang†](https://mewangcl.github.io/)
 
-**The code will be released before SIGGRAPH Conference.**
-
 SIGGRAPH 2025   
 (ACM Transaction on Graphics)
-
-
-
-
 
 ![](https://ryantaoliu.github.io/NeuralTOMO/images/1.jpg)
 
