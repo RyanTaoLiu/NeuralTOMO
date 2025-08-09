@@ -1,0 +1,10 @@
+conda create -n NeuralTO python=3.10
+conda activate NeuralTO
+
+conda install pytorch==2.3.0 torchvision==0.18.0 torchaudio==2.3.0 pytorch-cuda=11.8 -c pytorch -c nvidia
+conda install nvidia/label/cuda-11.8.0::cuda-toolkit
+conda install -c conda-forge scikit-sparse
+
+pip install comet_ml paramiko matplotlib ninja pyvista
+pip install mkl py_MKL
+pip install diso=0.1.2
