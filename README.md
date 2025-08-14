@@ -1,6 +1,6 @@
 # [Neural Co-Optimization of Structural Topology, Manufacturable Layers, and Path Orientations for Fiber​-Reinforced Composites](https://ryantaoliu.github.io/NeuralTOMO/)
 [![Project Page](https://img.shields.io/badge/Project-Website-blue)](https://ryantaoliu.github.io/NeuralTOMO/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![License](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.3-red.svg)](https://pytorch.org/)
 
