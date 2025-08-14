@@ -60,8 +60,8 @@ python main.py \
   --material=PLAPlus \
   --no-isotropic \
   --wSF 0 \
-  --wSR 0 \
-  --wStress 0.3 \
+  --wSR 1 \
+  --wStress 0 \
   --desireVolumeFraction 0.15 \
   --wHarmonic 1 \
   --numLayers 5 \
