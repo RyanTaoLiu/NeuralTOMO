@@ -4,6 +4,8 @@
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.3-red.svg)](https://pytorch.org/)
 
+[**SIGGRAPH 2025 (ToG)**](https://dl.acm.org/doi/abs/10.1145/3730922)
+
 **Authors:**  
 [Tao Liu\*](#), [Tianyu Zhang\*](https://zhangty019.github.io/), Yongxue Chen, Weiming Wang,  Yu Jiang, Yuming Huang, and [Charlie C.L. Wang†](https://mewangcl.github.io/)
 
