@@ -85,9 +85,18 @@ Based on the paper, **An efficient 3D topology optimization code written in Matl
 - Two rotation matrix quasi-isotropy \[2\](https://doi.org/10.1007/s00158-023-03586-w) and anisotropy\[3\](https://doi.org/10.1007/s00158-019-02461-x), 
 
 ## Reference
-- [1] K. Liu & A. Tovar, “An efficient 3D topology optimization code written in Matlab”, Struct Multidisc Optim, 50(6): 1175-1196, 2014, https://doi.org/10.1007/s00158-014-1107-x
-- [2] Luo, YR., Hewson, R. & Santer, M. Spatially optimised fibre-reinforced composites with isosurface-controlled additive manufacturing constraints. Struct Multidisc Optim 66, 130 (2023). https://doi.org/10.1007/s00158-023-03586-w
-- [3] Jantos, D.R., Hackl, K. & Junker, P. Topology optimization with anisotropic materials, including a filter to smooth fiber pathways. Struct Multidisc Optim 61, 2135–2154 (2020). https://doi.org/10.1007/s00158-019-02461-x
+- [1] K. Liu and A. Tovar. **An efficient 3D topology optimization code written in Matlab**. *Structural and Multidisciplinary Optimization*, **50**(6):1175–1196, 2014. [https://doi.org/10.1007/s00158-014-1107-x](https://doi.org/10.1007/s00158-014-1107-x)  
+
+- [2] Y.R. Luo, R. Hewson, and M. Santer. **Spatially optimised fibre-reinforced composites with isosurface-controlled additive manufacturing constraints**. *Structural and Multidisciplinary Optimization*, **66**, 130, 2023. [https://doi.org/10.1007/s00158-023-03586-w](https://doi.org/10.1007/s00158-023-03586-w)  
+
+- [3] D.R. Jantos, K. Hackl, and P. Junker. **Topology optimization with anisotropic materials, including a filter to smooth fiber pathways**. *Structural and Multidisciplinary Optimization*, **61**:2135–2154, 2020. [https://doi.org/10.1007/s00158-019-02461-x](https://doi.org/10.1007/s00158-019-02461-x)  
+
+- [4] T. Liu, T. Zhang, Y. Chen, Y. Huang, and C.C.L. Wang. **Neural Slicer for Multi-Axis 3D Printing**. *ACM Transactions on Graphics*, **43**(4), Article 85, 15 pages, July 2024. [https://doi.org/10.1145/3658212](https://doi.org/10.1145/3658212)  
+
+- [5] T. Liu, T. Zhang, Y. Chen, W. Wang, Y. Jiang, Y. Huang, and C.C.L. Wang. **Neural Co-Optimization of Structural Topology, Manufacturable Layers, and Path Orientations for Fiber-Reinforced Composites**. *ACM Transactions on Graphics*, **44**(4), Article 128, 17 pages, August 2025. [https://doi.org/10.1145/3730922](https://doi.org/10.1145/3730922)  
+
+
+
 ## Contact information: 
 - Tao Liu  (tao.liu@manchester.ac.uk)
 - Tianyu Zhang  (tianyu.zhang@manchester.ac.uk)
