@@ -96,20 +96,9 @@ class FE:
         self.u[self.mesh.free, 0] = u
         c = (self.f*u).sum()
         uElem = self.u[self.mesh.edofMat].reshape(self.mesh.numElems, self.mesh.numDOFPerElem)
-        sigmaElem = torch.einsum('bij,jk,bk->bi', C, B, uElem)
+        sigmaElem = torch.einsum('bij,jk,bk -> bi', C, B, uElem)
         
-        # Hoffman criterion, Hoffman yield criterion.
-        # quadratic function
-
-        # F_material = self.H8.F
-        # F1, F2, F3, F11, F22, F33, F12, F13, F23 = F_material
-        # delta1, delta2, delta3 = deltaElem[:,0], deltaElem[:,1],  deltaElem[:,2]
-
-        ## _A x**2 + _B x + _C = 0
-        #_A = F11*delta1*delta1 + F22*delta2 * delta2 + F33*delta3*delta3 +\
-        #    F12*delta1*delta2 + F13*delta1*delta3 + F23*delta2*delta3
-        #_B = F1*delta1 + F2*delta2 + F3*delta3
-        #_C = -1
+        # sigmaElem = torch.einsum('bij,jk,bk,bim -> bm', C, B, uElem, T)
 
         P, Q = self.H8.P, self.H8.Q
         _A = 0.5 * torch.einsum('ij, jk, ik ->i', sigmaElem, P, sigmaElem)
