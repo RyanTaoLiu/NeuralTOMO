@@ -547,7 +547,7 @@ class TopologyOptimizer:
                            pth_savepath)
                 sftp.save(pth_savepath)
                 
-                                plotter = pv.Plotter()
+                plotter = pv.Plotter()
                 glyph_cube = pct.glyph(geom=pv.Cube(), orient=False, scale='density')
                 glyph_lpd = pct.glyph(geom=pv.Arrow(), orient='lpd', scale='density')
                 glyph_fiber = pct.glyph(geom=pv.Arrow(), orient='fiber', scale='density')
