@@ -223,7 +223,7 @@ class TopologyOptimizer:
 		TH = torch.einsum('bij,bj->bi', hessianMatrix, gradT)
 		kappa = torch.cross(TH, gradT, dim=-1).norm(dim=-1)
 		dkappa = torch.nn.functional.relu(kappa-max_curvature)
-		return (dkappa * nn_rho).sum() / (nn_rho.sum() + 1e-8)
+		return (dkappa.flatten() * nn_rho).sum() / (nn_rho.sum() + 1e-8)
     
     def loss_gradient_length(self, nn_dir_lpd, nn_rho, c=0.001):
         gradient_length = torch.norm(nn_dir_lpd, dim=1)

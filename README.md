@@ -86,6 +86,8 @@ Based on the paper, **An efficient 3D topology optimization code written in Matl
 
 - Two rotation matrix quasi-isotropy \[2\](https://doi.org/10.1007/s00158-023-03586-w) and anisotropy\[3\](https://doi.org/10.1007/s00158-019-02461-x), 
 
+- For stress only based optimization, a small `1e-3`regulartion weight should be used for **wSR**(rigid).
+
 ## Reference
 - [1] K. Liu and A. Tovar. **An efficient 3D topology optimization code written in Matlab**. *Structural and Multidisciplinary Optimization*, **50**(6):1175–1196, 2014. [https://doi.org/10.1007/s00158-014-1107-x](https://doi.org/10.1007/s00158-014-1107-x)  
 
