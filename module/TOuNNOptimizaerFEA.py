@@ -218,7 +218,7 @@ class TopologyOptimizer:
                                         allow_unused=True,materialize_grads=True)[0]
         dt_dz = torch.autograd.grad(tz, xyz, torch.ones_like(tz), create_graph=True, retain_graph=True, 
                                         allow_unused=True,materialize_grads=True)[0]
-        hessianMatrix = torch.stack(([dt_dx, dt_dy, dt_dz], -1)
+        hessianMatrix = torch.stack([dt_dx, dt_dy, dt_dz], -1)
 		
         TH = torch.einsum('bij,bj->bi', hessianMatrix, gradT)
         kappa = torch.cross(TH, gradT, dim=-1).norm(dim=-1)
