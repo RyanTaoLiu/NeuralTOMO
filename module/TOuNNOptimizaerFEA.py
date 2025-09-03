@@ -503,7 +503,7 @@ class TopologyOptimizer:
                 nn_rho_upsampling = self.forcedNullElement(nn_rho_upsampling)
 
                 nn_rho_upsampling = 1 - nn_rho_upsampling
-                
+                mesh = None
                 try:
                     nn_rho_upsampling_grid = nn_rho_upsampling.reshape(self.mesh.nelz, self.mesh.nelx, self.mesh.nely)
                     nn_rho_upsampling_grid = nn_rho_upsampling_grid.permute(1, 2, 0)
@@ -546,5 +546,18 @@ class TopologyOptimizer:
                             'topNet_state_dict': self.topNet.state_dict()},
                            pth_savepath)
                 sftp.save(pth_savepath)
+                
+                                plotter = pv.Plotter()
+                glyph_cube = pct.glyph(geom=pv.Cube(), orient=False, scale='density')
+                glyph_lpd = pct.glyph(geom=pv.Arrow(), orient='lpd', scale='density')
+                glyph_fiber = pct.glyph(geom=pv.Arrow(), orient='fiber', scale='density')
+                if epoch == 1000:
+                    plotter.add_axes()
+                    plotter.add_mesh(glyph_cube, style='wireframe')
+                    plotter.add_mesh(glyph_lpd, color='r')
+                    plotter.add_mesh(glyph_fiber, color='g')
+                    if mesh is not None:
+                        plotter.add_mesh(mesh, show_edges=True)
+                    plotter.show()
 
         return self.convergenceHistory
