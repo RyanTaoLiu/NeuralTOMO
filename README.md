@@ -31,6 +31,17 @@ Our method targets **fiber-reinforced thermoplastic composites**, aiming to **ma
 *Figure: Overview of our slicing framework for co-optimization of design and manufacturing constraints in multi-axis 3D printing.*
 
 ## 🚀 Installation
+
+### Environment
+- **OS:** Ubuntu 20.04 LTS  
+- **GPU:** Nvidia RTX 4080 / 4090 (≥16 GB VRAM)  
+- **CPU:** 13th Gen Intel(R) Core(TM) i7-13700K  
+- **Memory:** 32 GB  
+
+### Performance
+- The estimated runtime of **TipCantilever (30×20×20)** is about **694 seconds** on the tested hardware.
+
+
 ### Git download the code
 ```bash
 git clone https://github.com/RyanTaoLiu/NeuralTOMO
