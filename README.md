@@ -58,12 +58,14 @@ conda activate NeuralTO
 ### Install dependencies
 ```
 conda install pytorch==2.3.0 torchvision==0.18.0 torchaudio==2.3.0 pytorch-cuda=11.8 -c pytorch -c nvidia
-conda install nvidia/label/cuda-11.8.0::cuda-toolkit
+#conda install nvidia/label/cuda-11.8.0::cuda-toolkit
+conda install -y -c "nvidia/label/cuda-11.8.0" cuda-nvcc=11.8.89 cuda-cudart=11.8.89 cuda-toolkit=11.8.0
+
 conda install -c conda-forge scikit-sparse
 
-pip install comet_ml paramiko matplotlib ninja pyvista
-pip install mkl py_MKL
-pip install diso=0.1.2
+pip install comet_ml paramiko matplotlib ninja pyvista meshio
+pip install mkl pymkl
+pip install diso==0.1.2
 ```
 
 ### 🧪Example of TipCantilever
