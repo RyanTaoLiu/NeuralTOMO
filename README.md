@@ -57,6 +57,7 @@ conda activate NeuralTO
 
 ### Install dependencies
 ```
+conda install -y -c conda-forge gxx_linux-64=11 binutils_linux-64 sysroot_linux-64
 conda install pytorch==2.3.0 torchvision==0.18.0 torchaudio==2.3.0 pytorch-cuda=11.8 -c pytorch -c nvidia
 #conda install nvidia/label/cuda-11.8.0::cuda-toolkit
 conda install -y -c "nvidia/label/cuda-11.8.0" cuda-nvcc=11.8.89 cuda-cudart=11.8.89 cuda-toolkit=11.8.0
@@ -64,7 +65,7 @@ conda install -y -c "nvidia/label/cuda-11.8.0" cuda-nvcc=11.8.89 cuda-cudart=11.
 conda install -c conda-forge scikit-sparse
 
 pip install comet_ml paramiko matplotlib ninja pyvista meshio
-pip install mkl pymkl
+pip install pymkl
 pip install diso==0.1.2
 ```
 
@@ -101,6 +102,7 @@ Based on the paper, **An efficient 3D topology optimization code written in Matl
 
 - For stress only based optimization, a small `1e-3`regulartion weight should be used for **wSR**(rigid).
 
+- The result saved every 50 iterations, includes a '*.obj' file for the topology optimization marching cubes result(via diso lib), and '*.vtk’ file for the voxel-based density('density'), fiber direction ('fiber'), and local printing direction('lpd').
 ## Reference
 - [1] K. Liu and A. Tovar. **An efficient 3D topology optimization code written in Matlab**. *Structural and Multidisciplinary Optimization*, **50**(6):1175–1196, 2014. [https://doi.org/10.1007/s00158-014-1107-x](https://doi.org/10.1007/s00158-014-1107-x)  
 
