@@ -96,7 +96,7 @@ Will show the help documents for args.
 - **Boundary condition**, See [*'./settings/problems/testproblem.py'*](https://github.com/RyanTaoLiu/NeuralTOMO/blob/main/settings/problems/testProblem.py). 
 Based on the paper, **An efficient 3D topology optimization code written in Matlab**\[1\]. Add any new boundary condition as the new py file follow the *testproblem.py* and can be called by the arg *'--problem'*.
 
-- Voigt tensor order: ```[xx, yy, zz, yz, xz, zy]```
+- Voigt tensor order: ```[xx, yy, zz, yz, xz, xy]```
 
 - Two rotation matrix quasi-isotropy \[2\](https://doi.org/10.1007/s00158-023-03586-w) and anisotropy\[3\](https://doi.org/10.1007/s00158-019-02461-x), 
 
